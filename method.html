@@ -34,6 +34,8 @@
         ]
    
         const targetdivp = document.querySelectorAll("#tabcontent p");
+        // querySelectorAll 호출된 객체는 비록 하나더라도 
+        // 정렬화객체가 되므로 targetdivp[0] 이런식으로 접근해야만 함
         const btns = document.querySelectorAll(".btn");
 
         btns.forEach(function(ele, idx){
